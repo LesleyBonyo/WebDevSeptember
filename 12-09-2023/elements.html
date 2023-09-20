@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,14 +7,14 @@
 </head>
 <body>
 	<!--headings -->
-	<h1>First Heading</h1>
+	<h1 class="blueclass secondclass ">First Heading</h1>
 	<h2>Second Heading</h2>
 	<h3>Third Heading</<h3>
 	<h4>Forth Heading</h4>
 	<h5>Fifth Heading</h5>
 	<h6>Sixth Heading</h6>
 	<!--paragraphs -->
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<p id="par1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span style="color:red;">sed do eiusmod</span>
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -66,13 +66,70 @@
 
 	<h2>Registration Form</h2>
 	<!--forms and form elements -->
-
+	<hr>
 	<form>
-		<label>Username:</label>
-		<input type="text" name="username" placeholder="Enter your name">
-		<label>Password:</label>
+		<div>
+			<label>Username:</label><br>
+		<input type="text" name="username" placeholder="Enter your name" required></div>
+		<div>
+		<label>Password:</label><br>
 		<input type="password" name="password" placeholder="Enter your password">
+	</div>
+	<div>
+		<label>Number: </label>
+		<input type="number" name="number" placeholder="Enter your number" min="0" max="200">
+	</div>
+		<label>DOB: </label>
+		<input type="date" name="dob" placeholder="DOB">
+		<!-- radio buttons -->
+		<div>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="Male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="Female">
+		<label>Female</label>
+	</div>
+		<!-- checkbox -->
+		<div>
+		<label>Courses</label>
+
+		<input type="checkbox" name="course1" value="DBIT">
+		<label>DBIT</label>
+
+		<input type="checkbox" name="course2" value="DBM">
+		<label>DBM</label>
+
+		<input type="checkbox" name="course3" value="ICS">
+		<label>ICS</label>
+	</div>
+		<!--textarea -->
+		<div>
+		<label>Feedback:</label>
+		<textarea name="feedback" rows="5" cols="20"> Write your feedback... </textarea>
+	</div>
+		<!-- select -->
+		<div>
+				<label>Unit</label>
+		<select name="unit">
+			<option>--Select Unit--</option>
+			<option>Web development</option>
+			<option>Software Eng.</option>
+			<option>DSA</option>
+			<option>Networking</option>
+		</select>
+		</div>
+		<div>
+
+		<input type="submit" name="submit" value="Register">
+		<input type="reset" name="reset">
+
+		<button>
+			<img src="RedKitten.jpg" width="15px">
+			MyButton
+		</button>
+	</div>
 	</form>
+
 
 </body>
 </html>
