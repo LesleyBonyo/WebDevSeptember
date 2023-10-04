@@ -1,0 +1,69 @@
+.toplist{
+	background-color: #107F48;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding: 15px 30px;
+}
+li a:hover {
+	color: #107F48;
+	background-color: white;
+}
+.active {
+	background-color: #7BDCB5;
+}
+
+.left {
+	/*display: inline;*/
+	float: left;
+}
+.right {
+	float: right;
+}
+
+h1 {
+	text-align: center;
+	margin: 35px;
+}
+.signupform {
+	background-color: #7BDCB5;
+	border-radius: 4px;
+	padding: 20px;
+}
+[type="email"], 
+[type="password"], select {
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 4px;
+	margin: 8px 0;
+
+}
+
+[type="submit"]{
+	width: 100%;
+	background-color: #194D38;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+[type="submit"]:hover{
+	opacity: 0.5;
+}
+label{
+	display: block;
+	text-align: center;
+}
+
+*{
+	box-sizing: border-box;
+}
+

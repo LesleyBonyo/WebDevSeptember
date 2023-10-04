@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /* styling text */
 h1 {
 	/*color: red;
@@ -11,7 +13,7 @@ p{
 	font-size: 30px;
 	font-weight: bold;
 	font-style: italic;
-	font-family: sans-serif;
+	font-family: Montserrat;
 	line-height: 1.5;
 	padding: 30px;
 }
@@ -46,3 +48,50 @@ div a:active {
 	color: white;
 	background-color: red;
 }
+
+/* borders */
+table, th, td {
+	/*
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;*/
+
+	border: 1px solid red;
+	border-collapse: collapse;
+
+}
+.apar {
+	border: 1px solid black;
+	border-radius: 55px;
+}
+
+ul {
+	list-style-type: square;
+}
+input, [type="text"] {
+	display: block;
+	/*margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 20px;
+
+	margin: 10px 0 0 20px;
+	margin: 10px 20px;
+	margin: 10px;*/
+	margin: 10px auto;
+}
+.first{
+	width: 100px;
+	height: 170px;
+	padding: 30px;
+	border: 1px solid black;
+}
+.second{
+	width: 100px;
+	height: 170px;
+	border: 1px solid black;
+}
+*{
+	box-sizing: border-box;
+}
+
