@@ -1,5 +1,4 @@
 # WebDevSeptember
-<br>
 
 ## HTML Class
 HTML define the structure of the page. <br><br>
