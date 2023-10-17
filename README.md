@@ -11,3 +11,7 @@ CSS Properties : <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/ma
 signup form and top navigation bar : <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/04-10-2023">Design a simple sign up form</a>
 <br>
 ## JavaScript Class
+Add interactivity to your page using JavaScript.
+<br>
+JavaScript syntax :  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/11-10-2023"> JS Syntax</a> 
+ <br>
