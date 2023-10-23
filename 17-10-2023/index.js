@@ -20,8 +20,27 @@ console.log(headings[1])
 //value property
 let num1 = document.getElementById('num1');
 let num2 = document.getElementById('num2');
+//num1.value;
 
-num1.value;
+//change attribute of html elements
+/*let cat = document.getElementById('cat');
+cat.src = "cat.png";
+
+//add style to elements
+cat.style.borderTop = "2px solid black"; */
+
+// events
+function findProduct(){
+	//console.log(num1.value * num2.value);
+	//alert(num1.value * num2.value);
+	document.getElementById('result').innerHTML = 
+					num1.value * num2.value;
+
+	return false;
+}
+
+
+
 
 
 

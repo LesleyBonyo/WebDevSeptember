@@ -15,15 +15,17 @@
 
 	<h1>SignUp</h1>
 	<div class="signupform">
-	<form>
+	<form onsubmit="return validateForm()">
 		<label for="email">Email</label>
-		<input type="email" name="email" placeholder="Enter your Email">
+		<input type="email" name="email" placeholder="Enter your Email" id="email">
 
 		<label for="password">Password</label>
-		<input type="password" name="password" placeholder="Enter your Password">
+		<input type="password" name="password" placeholder="Enter your Password" id="password">
+		<div id="passresult"></div>
 
 		<label for="cpassword">Confirm Password</label>
-		<input type="password" name="cpassword" placeholder="Enter password again">
+		<input type="password" name="cpassword" placeholder="Enter password again" id="cpassword">
+		<div id="cpassresult"></div>
 
 		<label>Account Type</label>
 		<select>
@@ -35,5 +37,28 @@
 	</form>
 </div>
 
+<script>
+	// form validation
+	function validateForm(){
+		let email = document.getElementById('email').value;
+		let password = document.getElementById('password').value;
+		let cpassword = document.getElementById('cpassword').value;
+		let passResult = document.getElementById('passresult');
+		let cpassResult = document.getElementById('cpassresult');
+
+		if (email == '' || password == '' || cpassword == '') {
+			alert("Fields should not be empty");
+		} else if (password.length < 8) {
+			passResult.innerHTML = "password should have 8 or more characters";
+			return false;
+		} else if (cpassword.length < 8) {
+			cpassResult.innerHTML = "password should have 8 or more characters";
+			return false;
+		}
+
+	}
+
+
+</script>
 </body>
 </html>

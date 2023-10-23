@@ -14,10 +14,13 @@
 	<h1>Second Heading</h1>
 
 	<form>
-		<input type="number" name="num1" id="num1">
-		<input type="number" name="num2" id="num2">
-		<input type="submit" name="submit">
+		<input type="number" name="num1" id="num1" required>
+		<input type="number" name="num2" id="num2" required>
+		<input type="submit" name="submit" onclick="return findProduct();">
 	</form>
+	<div id="result" style="color: red;"></div>
+
+	<img src="RedKitten.jpg" width="50%" id="cat" onmouseover="this.src='cat.png'" onmouseout="this.src='RedKitten.jpg'">
 	<script src="index.js">
 	</script>
 </body>
