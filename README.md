@@ -14,8 +14,8 @@ signup form and top navigation bar : <a href="https://github.com/LesleyBonyo/Web
 Add interactivity to your page using JavaScript.
 <br>
 JavaScript syntax :  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/11-10-2023"> JS Syntax</a> 
- <br>
+ <br><br>
  JavaScript HTML DOM :  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/17-10-2023"> JS HTML DOM</a> 
- <br>
+ <br><br>
  JavaScript Form Validation:  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/04-10-2023"> Form Validation</a> 
- <br>
+ <br><br>
