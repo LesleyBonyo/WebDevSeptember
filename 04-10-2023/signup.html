@@ -15,17 +15,17 @@
 
 	<h1>SignUp</h1>
 	<div class="signupform">
-	<form onsubmit="return validateForm()">
+	<form onsubmit="return validateForm()" action="home.html">
 		<label for="email">Email</label>
 		<input type="email" name="email" placeholder="Enter your Email" id="email">
 
 		<label for="password">Password</label>
 		<input type="password" name="password" placeholder="Enter your Password" id="password">
-		<div id="passresult"></div>
+		<div id="passresult" class="result"></div>
 
 		<label for="cpassword">Confirm Password</label>
 		<input type="password" name="cpassword" placeholder="Enter password again" id="cpassword">
-		<div id="cpassresult"></div>
+		<div id="cpassresult" class="result"></div>
 
 		<label>Account Type</label>
 		<select>
@@ -48,13 +48,33 @@
 
 		if (email == '' || password == '' || cpassword == '') {
 			alert("Fields should not be empty");
-		} else if (password.length < 8) {
-			passResult.innerHTML = "password should have 8 or more characters";
-			return false;
-		} else if (cpassword.length < 8) {
-			cpassResult.innerHTML = "password should have 8 or more characters";
 			return false;
 		}
+		if (password.length < 8) {
+			passResult.innerHTML = "password should have 8 or more characters";
+			return false;
+		} else{
+			passResult.innerHTML = "";
+		}
+		if (cpassword.length < 8) {
+			cpassResult.innerHTML = "password should have 8 or more characters";
+			return false;
+		} else {
+			cpassResult.innerHTML = "";
+		}
+		if (!password.match(/^[a-zA-Z0-9]*$/)) {
+			//regular expression
+			passResult.innerHTML = "password should have only alphanumeric characters";
+			return false;
+		} else{
+			passResult.innerHTML = "";
+		}
+		if (password !== cpassword) {
+			cpassResult.innerHTML = "Passwords do not match";
+			return false;
+		} 
+		alert('success');
+		return true;
 
 	}
 
