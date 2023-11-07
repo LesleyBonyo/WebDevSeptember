@@ -69,5 +69,7 @@
 	}else{
 		echo "Soon";
 	}
+	//superglobals 
+	
 
 // closing php tag?> 
