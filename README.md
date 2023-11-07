@@ -19,3 +19,10 @@ JavaScript syntax :  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tre
  <br><br>
  JavaScript Form Validation:  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/04-10-2023"> Form Validation</a> 
  <br><br>
+
+ ## PHP
+Connect to and manipulate databases using PHP.
+<br><br>
+PHP syntax :  <a href="https://github.com/LesleyBonyo/WebDevSeptember/tree/main/31-10-2023"> PHP Syntax</a> 
+ <br><br>
+ 
