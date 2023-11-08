@@ -24,6 +24,7 @@
 	</style>
 </head>
 <body>
+	<button><a href="register.php">Register</a></button>
 	<h1>Registered Students</h1>
 	<table>
 		<tr>
@@ -49,8 +50,15 @@
 						<td>$name</td>
 						<td>$course</td>
 						<td>$phone_no</td>
-				<td><button>Update</button></td>
-				<td><button>Delete</button></td>
+				<td>
+				<button>
+				<a href='update.php?updateid=$id'>Update</a>
+				</button>
+				</td>
+				<td>
+				<button>
+	<a href='delete.php?deleteid=$id'>Delete</a>
+				</button></td>
 					</tr>";	
 				}
 				

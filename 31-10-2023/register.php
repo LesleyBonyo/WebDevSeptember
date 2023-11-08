@@ -10,7 +10,8 @@
 		$result = mysqli_query($connect, $sql);
 		if ($result) {
 			// code...
-			echo "Student added successfully";
+			//echo "Student added successfully";
+			header("location:display.php");
 		} else{
 			echo "Not added successfully";
 		}
