@@ -1,19 +1,30 @@
 <?php 
   include 'connect.php';
   $success = 0;
+  $unsuccess = 0;
   if ($_SERVER['REQUEST_METHOD']=='POST') {
     // code...
     $email = $_POST['email'];
     $password = $_POST['password'];
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO users(email,password) VALUES('$email', '$password_hash')";
-    $result = mysqli_query($connect, $sql);
-    if ($result) {
-      $success = 1;   
-    } else{
-      $success = 0;
+    $mysql = "SELECT * FROM users WHERE email='$email'";
+    $myresult = mysqli_query($connect,$mysql);
+    if ($myresult) {
+      $recordnumber = mysqli_num_rows($myresult);
+      if($recordnumber>0){
+        $unsuccess = 1;
+      } else{
+        $sql = "INSERT INTO users(email,password) VALUES('$email', '$password_hash')";
+      $result = mysqli_query($connect, $sql);
+      if ($result) {
+          $success = 1;   
+      } else{
+        die(mysqli_error($connect));
+      }
+      }
     }
+
+    
   }
 
   
@@ -55,9 +66,9 @@
     echo "<div style='Color: green; text-align: center;'>Signup successful!!</div>";
   }
 
-  if (!$success) {
+  if ($unsuccess) {
     // code...
-     echo "<div style='Color: red; text-align: center;'>Signup not successful!!</div>";
+     echo "<div style='Color: red; text-align: center;'>Email already exists!!</div>";
   }
 
 ?>

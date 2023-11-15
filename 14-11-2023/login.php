@@ -13,9 +13,14 @@
         // code...
         $row = mysqli_fetch_assoc($result);
         $id = $row['user_id'];
+        $email = $row['email'];
         $password_hash = $row['password'];
         if(password_verify($password, $password_hash)){
-          header("location:home.php")
+          //sessions
+          session_start();
+          $_SESSION['email'] = $email;
+          $_SESSION['id'] = $id;
+          header("location:home.php");
         } else{
        echo "Not Successful";
     }
